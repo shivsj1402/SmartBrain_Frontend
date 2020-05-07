@@ -29,7 +29,7 @@ class Register extends Component{
     }
 
     onSubmitReg =() =>{
-        fetch('http://obscure-ocean-70775.herokuapp.com/register', {
+        fetch('https://obscure-ocean-70775.herokuapp.com/register', {
             method:'post',
             headers:{
                 'Content-Type' : 'application/json'

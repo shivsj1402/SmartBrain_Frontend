@@ -81,7 +81,7 @@ class App extends Component{
     this.setState({
       imgUrl: this.state.input
     })
-    fetch('http://obscure-ocean-70775.herokuapp.com/imageClarafai', {
+    fetch('https://obscure-ocean-70775.herokuapp.com/imageClarafai', {
       method:'post',
       headers:{
           'Content-Type' : 'application/json'
@@ -92,7 +92,7 @@ class App extends Component{
       }).then(response => response.json())
       .then(response=>{
         if(response){
-          fetch('http://obscure-ocean-70775.herokuapp.com/image', {
+          fetch('https://obscure-ocean-70775.herokuapp.com/image', {
             method:'put',
             headers:{
                 'Content-Type' : 'application/json'
